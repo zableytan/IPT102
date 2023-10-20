@@ -23,9 +23,7 @@ public class HomePage extends AppCompatActivity {
         exitCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Perform logout action and go back to the login page (MainActivity)
                 Intent intent = new Intent(HomePage.this, MainActivity.class);
-                // Add a flag to clear the back stack so the user can't go back to the home page
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
