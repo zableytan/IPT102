@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private Button loginButton;
     private TextView signupText;
 
-    // Hardcoded username and password
     private static final String CORRECT_USERNAME = "bazleytan";
     private static final String CORRECT_PASSWORD = "nayskamaamkeana";
 
@@ -41,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
-                    usernameEditText.setText(""); // Clear username text
-                    passwordEditText.setText(""); // Clear password text
+                    usernameEditText.setText("");
+                    passwordEditText.setText("");
                 }
             }
         });
